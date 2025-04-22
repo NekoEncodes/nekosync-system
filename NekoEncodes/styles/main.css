@@ -1,0 +1,58 @@
+.upload-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+.upload-card {
+  cursor: pointer;
+}
+.upload-thumb {
+  max-width: 150px;
+  border-radius: 0.5rem;
+  transition: transform 0.2s;
+}
+.upload-thumb:hover {
+  transform: scale(1.05);
+}
+.upload-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-modal.hidden {
+  display: none;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 400px;
+  text-align: center;
+}
+.modal-image {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+.modal-button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}

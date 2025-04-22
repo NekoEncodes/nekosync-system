@@ -1,0 +1,212 @@
+<html>
+	<head>
+		<title>Neko Encodes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="uploads.html" class="button upload-link">View Uploads</a>
+						<p>Anime &nbsp;&bull;&nbsp; Lazy &nbsp;&bull;&nbsp; You never asked for this</p>
+						<nav>
+							<ul>
+								<li><a href="https://www.twitter.com/nekobdmv" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/NekoEncodes" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:neko@nekoencodes.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+<!-- RSS Feed Section -->
+<style>
+  body.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  .rss-item a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .rss-item p {
+    margin-top: 0.5rem;
+  }
+
+  #theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background-color: var(--btn-bg, #444);
+    color: var(--btn-text, #fff);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  #rss-loader {
+    text-align: center;
+    font-style: italic;
+    margin: 1rem;
+    animation: pulse 1.2s infinite ease-in-out;
+  }
+
+  @keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+
+  #rss-updated {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #888;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    #theme-toggle {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+</style>
+
+<button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+<main id="rss-feed" class="rss-feed" role="region" aria-label="Latest Uploads">
+  <h2>Latest Uploads</h2>
+  <p id="rss-updated" aria-live="polite"></p>
+  <div id="rss-loader" role="status">Loading feed…</div>
+  <div id="rss-items" class="rss-items" tabindex="0"></div>
+</main>
+
+<script src="scripts/rss.js" defer></script>
+
+<!-- RSS Feed Section -->
+<style>
+  body.dark {
+    background: #121212;
+    color: #eee;
+  }
+  .rss-item a { color: inherit; }
+  .rss-item p { margin-top: 0.5em; }
+  #theme-toggle {
+    position: fixed; top: 1rem; right: 1rem;
+    z-index: 999; background: #444; color: white;
+    border: none; padding: 0.5rem 1rem; border-radius: 5px;
+    font-size: 1rem; cursor: pointer;
+  }
+  #rss-loader {
+    text-align: center; font-style: italic; margin: 1em;
+    animation: pulse 1.2s infinite ease-in-out;
+  }
+  @keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+  #rss-updated {
+    text-align: center; font-size: 0.9em; color: gray;
+    margin-bottom: 1em;
+  }
+</style>
+
+<button id="theme-toggle">🌙</button>
+
+<section id="rss-feed" style="text-align:left; max-width: 800px; margin: 2em auto;">
+    <h2>Latest Uploads</h2>
+    <div id="rss-updated"></div>
+    <div id="rss-loader">Loading feed...</div>
+    <div id="rss-items"></div>
+</section>
+<script src="scripts/rss.js"></script>
+
+<!-- RSS Feed Section -->
+<style>
+  body.dark {
+    background: #121212;
+    color: #eee;
+  }
+  .rss-item a { color: inherit; }
+  #theme-toggle {
+    position: fixed; top: 1rem; right: 1rem;
+    z-index: 999; background: #444; color: white;
+    border: none; padding: 0.5rem 1rem; border-radius: 5px;
+    font-size: 1rem; cursor: pointer;
+  }
+  #rss-loader {
+    text-align: center; font-style: italic; margin: 1em;
+  }
+</style>
+
+<button id="theme-toggle">🌙</button>
+
+<section id="rss-feed" style="text-align:left; max-width: 800px; margin: 2em auto;">
+    <h2>Latest Uploads</h2>
+    <div id="rss-loader">Loading feed...</div>
+    <div id="rss-items"></div>
+</section>
+<script src="scripts/rss.js"></script>
+
+<!-- RSS Feed Section -->
+<section id="rss-feed" style="text-align:left; max-width: 800px; margin: 2em auto;">
+    <h2>Latest Uploads</h2>
+    <div id="rss-items"></div>
+</section>
+<script src="scripts/rss.js"></script>
+
+    <!-- RSS Feed Section -->
+    <section id="rss-feed" style="text-align:left; max-width: 800px; margin: 2em auto;">
+        <h2>Latest Uploads</h2>
+        <div id="rss-items"></div>
+    </section>
+
+    <script>
+      async function fetchRSS() {
+          const proxyUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://nyaa.si/?page=rss&u=Polarwindz';
+          
+          let response = await fetch(proxyUrl);
+          let data = await response.json();
+          
+          const rssFeedDiv = document.getElementById('rss-items');
+          rssFeedDiv.innerHTML = '';
+          
+          data.items.forEach(entry => {
+              const div = document.createElement('div');
+              div.className = 'rss-item';
+              div.innerHTML = `<h3><a href="${entry.link}" target="_blank">${entry.title}</a></h3><p>${entry.description}</p>`;
+              rssFeedDiv.appendChild(div);
+          });
+      }
+
+      setInterval(fetchRSS, 300000); // 5 minutes
+      window.onload = fetchRSS;
+    </script>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Neko Encodes 2024.</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
